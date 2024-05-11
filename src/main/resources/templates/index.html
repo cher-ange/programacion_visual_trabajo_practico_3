@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Reporte de progreso</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: whitesmoke;
+            padding: 0 10px;
+        }
+
+        hr {
+            border: none;
+            border-top: 3px double black;
+            color: black;
+            overflow: visible;
+            text-align: center;
+            height: 5px;
+        }
+
+        hr::after {
+            background-color: whitesmoke;
+            content: "§";
+            padding: 0 4px;
+            position: relative;
+            top: -13px;
+        }
+
+        header h1, header h2, header h3 {
+            text-align: center;
+        }
+
+        caption {
+            padding: 8px;
+        }
+
+        table {
+            border-collapse: collapse;
+            border: 3px double;
+        }
+
+        th, td {
+            border: 3px double;
+            padding: 10px;
+        }
+
+        tfoot {
+            text-align: center;
+        }
+
+        li {
+            padding-left: 4px;
+            list-style-type: "»"
+        }
+
+        section, aside {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1 style="font-family: serif"><i>Programación Visual</i></h1>
+    <h2 style="color: dimgray; font-family: monospace">Actualizándose conforme la materia avance.</h2>
+    <nav>
+        <ul>
+            <li><a href="#actividades-en-desarrollo">Actividades en desarrollo</a></li>
+            <li><a href="#herramientas-a-utilizar">Herramientas utilizadas</a></li>
+            <li><a href="#muy-pronto">Próximamente en la materia</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <hr>
+    <section id="actividades-en-desarrollo">
+        <h2># Actividades en desarrollo</h2>
+        <h3>Trabajos prácticos</h3>
+        <p>Un pequeño resumen de lo que hemos aprendido hasta ahora.</p>
+        <table>
+            <caption><u>Resumen de trabajos prácticos realizados</u></caption>
+            <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Tema</th>
+                <th scope="col">Observación</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">1-1</th>
+                <td>Introducción a Java: <code>variables</code>, <code>flow control</code> y <code>Objects</code>.<br>
+                    Introducción a git: <code>init</code>, <code>add</code>, <code>commit</code>, <code>push</code> y
+                    <code>pull</code>.
+                </td>
+                <td>Repaso de conceptos de programación ahora enfocado usando el lenguaje <code>Java</code>, concepto de
+                    <code>OOP</code>.
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">1-2</th>
+                <td>Introducción a Java: <code>enhanced for</code>, <code>arrays</code>, <code>dates</code>,
+                    <code>lists</code> y <code>exceptions</code>.<br>
+                <td>Práctica de iterar objetos almacenados en distintas estructuras de datos, creación y manejo de
+                    distintas formas de una fecha, introducción al concepto de una excepción.
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">2-1</th>
+                <td>Introducción a Java: <code>enum</code> y <code>constants</code>.<br>
+                    Continúa el uso de git: <code>branching</code> y <code>merge</code>.
+                </td>
+                <td>Introducción al concepto de <code>stream</code> y la facilidad para lograr filtros, acumulaciones o
+                    búsquedas.
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">2-2</th>
+                <td>Introducción a Java: <code>interface</code>, <code>@FunctionalInterface</code> y
+                    <code>Collections</code></td>
+                <td>Introducción al concepto de <code>stream</code> y la facilidad para lograr filtros, acumulaciones o
+                    búsquedas.
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">3-1</th>
+                <td>Introducción a Spring Boot: creación de un proyecto, <code>pom.xml</code>, <code>dependencies</code>
+                    y <code>Maven</code>.<br>
+                    Introducción a HTML: <code>tags</code> y <code>semantic</code>.
+                </td>
+                <td>Veremos el uso del <code>framework</code> <code>Spring Boot</code>, plantillas usando <code>thymeleaf</code>
+                    además de una breve introducción a HTML.
+                </td>
+            </tr>
+            </tbody>
+            <tfoot>
+            <tr>
+                <th colspan="2" scope="row">¡A la espera de más contenido!</th>
+                <td><img
+                        alt="..."
+                        src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/347b1ddd-5231-4d82-8550-1fd0f0dc4afb/da4fusm-0dae72c2-06df-4c3f-b48a-7f7eb2f6fd6f.png/v1/fill/w_50,h_50/_3_5floppy__by_blueamnesiac_da4fusm-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTAiLCJwYXRoIjoiXC9mXC8zNDdiMWRkZC01MjMxLTRkODItODU1MC0xZmQwZjBkYzRhZmJcL2RhNGZ1c20tMGRhZTcyYzItMDZkZi00YzNmLWI0OGEtN2Y3ZWIyZjZmZDZmLnBuZyIsIndpZHRoIjoiPD01MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.3xH3M8eDii5zbt76eskIeKUcsjENpKYVN8UX-AKAJF4"></td>
+            </tr>
+            </tfoot>
+        </table>
+    </section>
+    <hr>
+    <section id="herramientas-a-utilizar">
+        <h2># Herramientas a utilizar</h2>
+        <h3>Un listado de las herramientas que se usaran durante el cursado de la materia.</h3>
+        <p>Entre ellas están: <code>frameworks</code>, <code>CLI apps</code>, <code>programming languages</code>, <code>IDE</code> y muchas cosas más...</p>
+
+        <p><u>OS:</u></p>
+        <ol>
+            <li>Arch Linux <small>&laquo;actualmente en uso&raquo;</small></li>
+            <li>Windows</li>
+        </ol>
+
+        <p><u>IDE/Text Editors</u></p>
+        <ol>
+            <li><code>IntellijIDEA</code></li>
+            <li><code>Spring Tool Suite</code></li>
+            <li><code>Visual Studio Code</code></li>
+        </ol>
+
+        <p><u>Framework:</u></p>
+        <ol>
+            <li><code>Hibernate</code></li>
+            <li><code>Spring Boot</code></li>
+            <li><code>Bootstrap</code></li>
+        </ol>
+
+        <p><u>Template Engine:</u></p>
+        <ol>
+            <li><code>Thymeleaf</code></li>
+        </ol>
+
+        <p><u>Lenguaje de Programación:</u></p>
+        <ol>
+            <li><code>Java</code></li>
+        </ol>
+
+        <p><u>CLI</u></p>
+        <ol>
+            <li><code>git</code></li>
+        </ol>
+    </section>
+    <hr>
+    <section id="muy-pronto">
+        <h2># Muy pronto</h2>
+        <h3>Una mirada a los temas que llegarán en los próximas semanas</h3>
+        <p>En unos días comenzaremos a crear sitios web usando <code>html</code> y <code>css</code>.</p>
+        <p>Veremos patrones de diseño, en particular <code>MVC</code>, <code>DAO</code> y <code>Dependency Injection</code>.</p>
+        <p>Después entraremos en la creación y uso de una base de datos en este caso será <code>MySQL</code> empleando <code>JPA</code> y <code>Hibernate</code>.</p>
+        <p>También nos introduciremos al uso de pruebas unitarias con <code>JUnit</code></p>
+    </section>
+</main>
+
+<aside>
+    <hr>
+    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; row-gap: 10px">
+        <a href="#" title="Todavía queda mucho por aprender">Si miras desde abajo todo parece lejano</a>
+        <img alt="..."
+             src="https://images.unsplash.com/photo-1647614224159-0f2e7d804be4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDM2fFdkQ2hxbHNKTjljfHxlbnwwfHx8fHw%3D"
+             style="width: 250px; border: 3px solid dimgray">
+    </div>
+    <blockquote><i>Programar</i> es una actividad que algunos considerarían tediosa y rutinaria, pero no pueden observar lo que uno puede crear con tan solo <b>escribir</b>.</blockquote>
+    <hr>
+</aside>
+
+<footer style="display: flex; flex-direction: column; justify-content: space-evenly; align-items: center;">
+    <h2 style="color: dimgray; font-family: monospace">Actualizándose conforme la materia avance.</h2>
+    <div style="display: flex; justify-content: space-evenly; width: 100%">
+        <p>&copy;<span style="padding-left: 4px; font-weight: bold; font-family: sans-serif">Gutierrez Angel Gonzalo</span></p>
+        <ul>
+            <li><small>email: <a href="mailto:numbersevenonezero@gmail.com">numbersevenonezero@gmail.com</a></small>
+            </li>
+            <li><small>github: <a href="https://github.com/cher-ange">cher-ange</a></small></li>
+        </ul>
+    </div>
+</footer>
+</body>
+</html>
