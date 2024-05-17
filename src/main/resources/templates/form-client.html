@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Registro de Cliente</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+
+<div class="wrapper">
+    <header class="header">
+        <h1 class="header__title">Registrar cliente</h1>
+        <p class="header__information">
+            Campos requeridos se encuentran marcados con un
+            <span class="form__label--required" aria-label="required">*</span>.
+        </p>
+    </header>
+    <form action="#" class="form">
+        <section class="form__section">
+            <h2 class="form__section-title">Información del cliente</h2>
+            <fieldset class="group-control">
+                <legend class="group-control__title">Datos personales</legend>
+                <ul class="form__control">
+                    <li class="form__item">
+                        <label class="form__label" for="dni">DNI<span class="form__label--required"
+                                                                      aria-label="required">*</span></label>
+                        <input class="form__input" type="number" name="dni" id="dni" placeholder="45986542">
+                    </li>
+                    <li class="form__item">
+                        <label class="form__label" for="last-name">Apellido<span class="form__label--required"
+                                                                                 aria-label="required">*</span></label>
+                        <input class="form__input" type="text" name="lastName" id="last-name" placeholder="Apellido">
+                    </li>
+                    <li class="form__item">
+                        <label class="form__label" for="name">Nombre<span class="form__label--required"
+                                                                          aria-label="required">*</span></label>
+                        <input class="form__input" type="text" name="name" id="name">
+                    </li>
+                    <li class="form__item">
+                        <label class="form__label" for="birthdate">Fecha de nacimiento<span
+                                class="form__label--required" aria-label="required">*</span></label>
+                        <input class="form__input" type="date" name="birthdate" id="birthdate">
+                    </li>
+                    <li class="form__item">
+                        <fieldset class="group-control">
+                            <legend class="group-control__title">
+                                Género
+                                <span class="form__label--required" aria-label="required">*</span>
+                            </legend>
+                            <ul class="form__control">
+                                <li class="form__item">
+                                    <label class="form__label" for="male">Masculino</label>
+                                    <input class="form__input" type="radio" name="genre" id="male">
+                                </li>
+                                <li class="form__item">
+                                    <label class="form__label" for="female">Femenino</label>
+                                    <input class="form__input" type="radio" name="genre" id="female">
+                                </li>
+                                <li class="form__item">
+                                    <label class="form__label" for="x">X</label>
+                                    <input class="form__input" type="radio" name="genre" id="x">
+                                </li>
+                            </ul>
+                        </fieldset>
+                    </li>
+                    <li class="form__item">
+                        <label class="form__label" for="email">
+                            Correo electrónico
+                            <span class="form__label--required" aria-label="required">*</span>
+                        </label>
+                        <input class="form__input" type="text" name="email" id="email">
+                    </li>
+                    <li class="form__item">
+                        <label class="form__label" for="address">Domicilio<span class="form__label--required" aria-label="required">*</span></label>
+                        <input class="form__input" type="text" name="address" id="address">
+                    </li>
+                    <li class="form__item">
+                        <label class="form__label" for="province">
+                            Provincia
+                            <span class="form__label--required" aria-label="required">*</span>
+                        </label>
+                        <select name="province" id="province">
+                            <option value="" disabled selected>Selecciona una provincia</option>
+                            <option value="jujuy">Jujuy</option>
+                            <option value="salta">Salta</option>
+                            <option value="tucúman">Tucúman</option>
+                            <option value="mendoza">Mendoza</option>
+                        </select>
+                    </li>
+                    <li class="form__item">
+                        <label class="form__label" for="phone">
+                            N.º de celular
+                            <span class="form__label--required" aria-label="required">*</span>
+                        </label>
+                        <input class="form__input" type="text" name="phone" id="phone">
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset class="group-control">
+                <legend class="group-control__title">Misceláneas</legend>
+                <ul class="form__control">
+                    <li class="form__item">
+                        <fieldset class="group-control">
+                            <legend class="group-control__title">Categorías de interés</legend>
+                            <ul class="form__control">
+                                <li class="form__item">
+                                    <label class="form__label" for="video-games">Videojuegos</label>
+                                    <input class="form__input" type="radio" name="video-games" id="video-games">
+                                </li>
+                                <li class="form__item">
+                                    <label class="form__label" for="movies">Cine</label>
+                                    <input class="form__input" type="radio" name="movies" id="movies">
+                                </li>
+                                <li class="form__item">
+                                    <label class="form__label" for="food">Comida</label>
+                                    <input class="form__input" type="radio" name="food" id="food">
+                                </li>
+                                <li class="form__item">
+                                    <label class="form__label" for="reading">Lectura</label>
+                                    <input class="form__input" type="radio" name="reading" id="reading">
+                                </li>
+                            </ul>
+                        </fieldset>
+                    </li>
+                    <li class="form__item form__item--textarea">
+                        <label class="form__label" for="suggestions">Sugerencias para la empresa</label>
+                        <textarea class="form__input form__input-textarea" name="suggestions" id="suggestions" cols="30" rows="10"
+                                  placeholder="Tu sugerencia"></textarea>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset class="group-control">
+                <legend class="group-control__title">Autorización</legend>
+                <ul class="form__control">
+                    <li class="form__item">
+                        <label class="form__label" for="password">Contraseña<span class="form__label--required"
+                                                                                  aria-label="required">*</span></label>
+                        <input class="form__input" type="password" name="password" id="password">
+                    </li>
+                    <li class="form__item">
+                        <label class="form__label" for="accept-the-terms-and-conditions">
+                            Acepto los términos y condiciones
+                            <span class="form__label--required" aria-label="required">*</span>
+                        </label>
+                        <input class="form__input" type="checkbox" name="accept-the-terms-and-conditions" id="accept-the-terms-and-conditions">
+                    </li>
+                    <li class="form__item">
+                        <label class="form__label" for="agree-to-receive-information-related-to-the-company">
+                            Acepto recibir información relativa a la empresa
+                        </label>
+                        <input class="form__input" type="checkbox"
+                               name="agree-to-receive-information-related-to-the-company"
+                               id="agree-to-receive-information-related-to-the-company">
+                    </li>
+                </ul>
+            </fieldset>
+            <button class="button button--submit" type="submit">Envíar</button>
+        </section>
+    </form>
+</div>
+</body>
+</html>
